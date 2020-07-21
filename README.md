@@ -33,8 +33,3 @@ git push -u origin master // 僅限第一次輸入，往後只需要輸入 git p
 ```
 
 當將 Gulp 初次部署之後就可以輸入 `gulp build` 進入生產模式，當生產完畢之後最後只需要輸入 `gulp deploy` 即可完成 GitHub Pages 部署。
-# template-gulp
-# template-gulp
-# template-gulp-
-# template-gulp
-# template-gulp
