@@ -28,13 +28,6 @@ let envOptions = {
     ],
     path: distPath,
   },
-  css: {
-    src: [
-      `${srcPath}/assets/style/**/*.css`,
-    ],
-    concat: 'all.css',
-    path: `${distPath}/assets/style`,
-  },
   vendorscss: {
     src: [
       `${nodePath}/swiper/dist/**/swiper.min.css`,

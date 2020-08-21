@@ -55,19 +55,6 @@ function sass() {
     );
 }
 
-function cssbabel() {
-  return gulp.src(envOptions.css.src)
-    .pipe($.sourcemaps.init())
-    .pipe($.concat(envOptions.css.concat))
-    .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest(envOptions.css.path))
-    .pipe(
-      browserSync.reload({
-        stream: true,
-      }),
-    );
-}
-
 function vendorsCss() {
   return gulp.src(envOptions.vendorscss.src)
     .pipe($.concat(envOptions.vendorscss.concat))
@@ -123,7 +110,6 @@ function watch() {
   gulp.watch(envOptions.html.src, gulp.series(layoutHTML));
   gulp.watch(envOptions.html.ejsSrc, gulp.series(layoutHTML));
   gulp.watch(envOptions.javascript.src, gulp.series(babel));
-  gulp.watch(envOptions.css.src, gulp.series(cssbabel));
   gulp.watch(envOptions.img.src, gulp.series(copyFile));
   gulp.watch(envOptions.style.src, gulp.series(sass));
 }
@@ -132,6 +118,6 @@ exports.deploy = deploy;
 
 exports.clean = clean;
 
-exports.build = gulp.series(clean, copyFile, layoutHTML,  cssbabel, sass, babel, vendorsJs, vendorsCss);
+exports.build = gulp.series(clean, copyFile, layoutHTML,  sass, babel, vendorsJs, vendorsCss);
 
-exports.default = gulp.series(clean, copyFile, layoutHTML, sass, cssbabel, babel, vendorsJs, vendorsCss, gulp.parallel(browser, watch));
+exports.default = gulp.series(clean, copyFile, layoutHTML, sass, babel, vendorsJs, vendorsCss, gulp.parallel(browser, watch));
