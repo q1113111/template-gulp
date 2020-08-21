@@ -1,3 +1,6 @@
+//vendors
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
 // 工具和變數
 @import 'utils/variables';
 @import 'utils/function';
@@ -8,9 +11,13 @@
 //CSS reset
 @import 'base/reset';
 
+//版型
+@import 'base/typography';
+
 // 元件
 @import 'components/button';
 @import 'components/carousel';
+@import 'components/list01';
 @import 'components/dropdown';
 
 // layout
