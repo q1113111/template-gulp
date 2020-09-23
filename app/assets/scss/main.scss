@@ -1,8 +1,16 @@
 //vendors
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import 'utils/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/grid';
+@import '../../../node_modules/bootstrap/scss/reboot';
+@import '../../../node_modules/bootstrap/scss/transitions';
+@import '../../../node_modules/bootstrap/scss/nav';
+@import '../../../node_modules/bootstrap/scss/forms';
+@import '../../../node_modules/bootstrap/scss/pagination';
+
 
 // 工具和變數
-@import 'utils/variables';
 @import 'utils/function';
 @import 'utils/mixins';
 @import 'utils/helpers';
