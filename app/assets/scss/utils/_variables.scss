@@ -50,15 +50,7 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
 //我自訂的
-$title-color:#3A3A3A;
-$colnav-color:#565656;
-$subtitle:#9C9C9C;
-$place-holder:#CECECE;
-$box-shaow:#00000029;
-$bgc:#AFAFAF80;
-$border-color:#707070;
-$border-color2:#d1d1d1;
-$colors: () !default;
+
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
