@@ -1,11 +1,9 @@
 const gulp = require('gulp');
 const $ = require('gulp-load-plugins')({ lazy: false });
-// const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer');
 const minimist = require('minimist');
 const browserSync = require('browser-sync').create();
 const { envOptions } = require('./envOptions');
-
-
 
 let options = minimist(process.argv.slice(2), envOptions);
 //現在開發狀態
@@ -39,14 +37,18 @@ function layoutHTML() {
 }
 
 function sass() {
-  // const plugins = [
-  //   autoprefixer(),
-  // ];
+  const plugins = [
+    autoprefixer(),
+  ];
   return gulp.src(envOptions.style.src) 
     .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.sass.logError))
-    // .pipe($.postcss(plugins))
-    .pipe($.sourcemaps.write('.'))
+    .pipe($.postcss(plugins))
+    .pipe($.sass({
+      outputStyle: 'compressed'
+    }))
+    .pipe($.rename({suffix: '.min'}))
+    // .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest(envOptions.style.path))
     .pipe(
       browserSync.reload({
@@ -58,6 +60,8 @@ function sass() {
 function vendorsCss() {
   return gulp.src(envOptions.vendorscss.src)
     .pipe($.concat(envOptions.vendorscss.concat))
+    .pipe($.rename({suffix: '.min'}))
+    .pipe($.minifyCss())
     .pipe(gulp.dest(envOptions.vendorscss.path));
 }
 
@@ -68,7 +72,9 @@ function babel() {
       presets: ['@babel/env'],
     }))
     .pipe($.concat(envOptions.javascript.concat))
-    .pipe($.sourcemaps.write('.'))
+    // .pipe($.sourcemaps.write('.'))
+    .pipe($.uglify())
+    .pipe($.rename({suffix: '.min'}))
     .pipe(gulp.dest(envOptions.javascript.path))
     .pipe(
       browserSync.reload({
@@ -80,6 +86,8 @@ function babel() {
 function vendorsJs() {
   return gulp.src(envOptions.vendors.src)
     .pipe($.concat(envOptions.vendors.concat))
+    .pipe($.uglify())
+    .pipe($.rename({suffix: '.min'}))
     .pipe(gulp.dest(envOptions.vendors.path));
 }
 

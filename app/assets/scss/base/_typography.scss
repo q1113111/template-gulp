@@ -7,19 +7,21 @@ body {
 }
 
 a {
-    transition: 0.3s linear;
+    transition: .3s linear;
     text-decoration: none;
-    color: $link-color;
     &:hover {
-        color: $link-hover-color;
         text-decoration: none;
     }
+}
+.f-img{
+    max-width: none;
+    width: 100%;
 }
 img {
     max-width: 100%;
     vertical-align: top;
 }
-ul {
+ul,ol{
     margin-top: 0;
     list-style: none;
     padding-left: 0;
@@ -50,5 +52,13 @@ p{
     font-size: 1.75rem;
 }
 .t4{
+    font-size: 1.5rem;
+}
+.t5{
     font-size: 1.25rem;
+}
+@media screen and (max-width:575px){
+    html{
+        font-size: 14px;
+    }
 }

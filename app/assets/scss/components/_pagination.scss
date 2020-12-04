@@ -1,0 +1,46 @@
+.page{
+   &__list{
+       display: flex;
+       justify-content: center;
+   }
+   &__item{
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    background-color: $gray-900;
+    transition: $transitions;
+    border: 1px solid transparent;
+    &:hover{
+        background: transparent;
+        border-color: $primary;
+        a{
+            color: $primary;
+        }
+    }
+    &--active{
+        background-color: $primary;
+        a{
+            color: $white;
+        }
+    }
+   }
+   &__item +&__item{
+       margin-left: $spacer;
+   }
+    &__link{
+        color: $gray-200;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+    }
+}
+@media screen and (max-width:575px){
+    .page{
+        &__item + &__item{
+            margin-left: 8px;
+        }
+    }
+}

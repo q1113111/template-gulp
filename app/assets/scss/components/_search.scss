@@ -1,0 +1,14 @@
+.search{
+    display: flex;
+    justify-content: flex-end;
+    &__txt,&__btn{
+        border-bottom: 1px solid $info;
+    }
+    &__btn{
+        color: $gray-900;
+        transition: $transitions;
+        &:hover{
+            color: $gray-200;
+        }
+    }
+}
