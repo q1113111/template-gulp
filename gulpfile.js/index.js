@@ -41,7 +41,7 @@ function sass() {
     autoprefixer(),
   ];
   return gulp.src(envOptions.style.src) 
-    .pipe($.sourcemaps.init())
+    // .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.sass.logError))
     .pipe($.postcss(plugins))
     .pipe($.sass({
@@ -67,13 +67,13 @@ function vendorsCss() {
 
 function babel() {
   return gulp.src(envOptions.javascript.src)
-    .pipe($.sourcemaps.init())
+    // .pipe($.sourcemaps.init())
     .pipe($.babel({
       presets: ['@babel/env'],
     }))
     .pipe($.concat(envOptions.javascript.concat))
     // .pipe($.sourcemaps.write('.'))
-    .pipe($.uglify())
+    // .pipe($.uglify())
     .pipe($.rename({suffix: '.min'}))
     .pipe(gulp.dest(envOptions.javascript.path))
     .pipe(
