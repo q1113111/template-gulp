@@ -407,8 +407,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src:  url('../webfonts/icomoon.woff?gd66kb') format('woff');
-  src:  url('../webfonts/icomoon.woff?gd66kb') format('woff');
+  src:  url('../icomoon.woff?gd66kb') format('woff');
+  src:  url('../icomoon.woff?gd66kb') format('woff');
 }
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -417,8 +417,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src:  url('../webfonts/icomoon.woff?gd66kb') format('woff');
-  src:  url('../webfonts/icomoon.woff?gd66kb') format('woff');
+  src:  url('../icomoon.woff?gd66kb') format('woff');
+  src:  url('../icomoon.woff?gd66kb') format('woff');
 }
 
 .far {
@@ -429,8 +429,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src:  url('../webfonts/icomoon.woff?gd66kb') format('woff');
-  src:  url('../webfonts/icomoon.woff?gd66kb') format('woff');
+  src:  url('../icomoon.woff?gd66kb') format('woff');
+  src:  url('../icomoon.woff?gd66kb') format('woff');
  }
 
 .fa,
