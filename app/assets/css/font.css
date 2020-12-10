@@ -14,145 +14,186 @@
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  line-height: 1; }
+  line-height: 1;
+}
 
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
-  vertical-align: -.0667em; }
+  vertical-align: -.0667em;
+}
 
 .fa-xs {
-  font-size: .75em; }
+  font-size: .75em;
+}
 
 .fa-sm {
-  font-size: .875em; }
+  font-size: .875em;
+}
 
 .fa-1x {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .fa-2x {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .fa-3x {
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 .fa-4x {
-  font-size: 4em; }
+  font-size: 4em;
+}
 
 .fa-5x {
-  font-size: 5em; }
+  font-size: 5em;
+}
 
 .fa-6x {
-  font-size: 6em; }
+  font-size: 6em;
+}
 
 .fa-7x {
-  font-size: 7em; }
+  font-size: 7em;
+}
 
 .fa-8x {
-  font-size: 8em; }
+  font-size: 8em;
+}
 
 .fa-9x {
-  font-size: 9em; }
+  font-size: 9em;
+}
 
 .fa-10x {
-  font-size: 10em; }
+  font-size: 10em;
+}
 
 .fa-fw {
   text-align: center;
-  width: 1.25em; }
+  width: 1.25em;
+}
 
 .fa-ul {
   list-style-type: none;
   margin-left: 2.5em;
-  padding-left: 0; }
-  .fa-ul > li {
-    position: relative; }
+  padding-left: 0;
+}
+
+.fa-ul>li {
+  position: relative;
+}
 
 .fa-li {
   left: -2em;
   position: absolute;
   text-align: center;
   width: 2em;
-  line-height: inherit; }
+  line-height: inherit;
+}
 
 .fa-border {
   border: solid 0.08em #eee;
   border-radius: .1em;
-  padding: .2em .25em .15em; }
+  padding: .2em .25em .15em;
+}
 
 .fa-pull-left {
-  float: left; }
+  float: left;
+}
 
 .fa-pull-right {
-  float: right; }
+  float: right;
+}
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
-  margin-right: .3em; }
+  margin-right: .3em;
+}
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
-  margin-left: .3em; }
+  margin-left: .3em;
+}
 
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear; }
+  animation: fa-spin 2s infinite linear;
+}
 
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8); }
+  animation: fa-spin 1s infinite steps(8);
+}
 
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg); }
+  transform: rotate(90deg);
+}
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  transform: rotate(180deg);
+}
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg); }
+  transform: rotate(270deg);
+}
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
+  transform: scale(-1, 1);
+}
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-          transform: scale(1, -1); }
+  transform: scale(1, -1);
+}
 
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1); }
+  transform: scale(-1, -1);
+}
 
 :root .fa-rotate-90,
 :root .fa-rotate-180,
@@ -161,7 +202,8 @@
 :root .fa-flip-vertical,
 :root .fa-flip-both {
   -webkit-filter: none;
-          filter: none; }
+  filter: none;
+}
 
 .fa-stack {
   display: inline-block;
@@ -169,23 +211,28 @@
   line-height: 2em;
   position: relative;
   vertical-align: middle;
-  width: 2.5em; }
+  width: 2.5em;
+}
 
 .fa-stack-1x,
 .fa-stack-2x {
   left: 0;
   position: absolute;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 .fa-stack-1x {
-  line-height: inherit; }
+  line-height: inherit;
+}
 
 .fa-stack-2x {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .fa-inverse {
-  color: #fff; }
+  color: #fff;
+}
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
@@ -193,198 +240,287 @@ readers do not read off random characters that represent icons */
 .fa-search:before {
   content: "\f002";
 }
+
 .fa-heart:before {
   content: "\f004";
 }
+
 .fa-home:before {
   content: "\f015";
 }
+
 .fa-clock:before {
   content: "\f017";
 }
+
 .fa-tag:before {
   content: "\f02b";
 }
+
 .fa-tags:before {
   content: "\f02c";
 }
+
 .fa-image:before {
   content: "\f03e";
 }
+
 .fa-edit:before {
   content: "\f044";
 }
+
 .fa-chevron-left:before {
   content: "\f053";
 }
+
 .fa-chevron-right:before {
   content: "\f054";
 }
+
 .fa-share:before {
   content: "\f064";
 }
+
 .fa-shopping-cart:before {
   content: "\f07a";
 }
+
 .fa-folder:before {
   content: "\f07b";
 }
+
 .fa-folder-open:before {
   content: "\f07c";
 }
+
 .fa-arrow-circle-left:before {
   content: "\f0a8";
 }
+
 .fa-arrow-circle-right:before {
   content: "\f0a9";
 }
+
 .fa-arrow-circle-up:before {
   content: "\f0aa";
 }
+
 .fa-arrow-circle-down:before {
   content: "\f0ab";
 }
+
 .fa-list-ul:before {
   content: "\f0ca";
 }
+
 .fa-caret-down:before {
   content: "\f0d7";
 }
+
 .fa-caret-up:before {
   content: "\f0d8";
 }
+
 .fa-caret-left:before {
   content: "\f0d9";
 }
+
 .fa-caret-right:before {
   content: "\f0da";
 }
+
 .fa-envelope:before {
   content: "\f0e0";
 }
+
 .fa-angle-double-left:before {
   content: "\f100";
 }
+
 .fa-angle-double-right:before {
   content: "\f101";
 }
+
 .fa-angle-double-up:before {
   content: "\f102";
 }
+
 .fa-angle-double-down:before {
   content: "\f103";
 }
+
 .fa-angle-left:before {
   content: "\f104";
 }
+
 .fa-angle-right:before {
   content: "\f105";
 }
+
 .fa-angle-up:before {
   content: "\f106";
 }
+
 .fa-angle-down:before {
   content: "\f107";
 }
+
 .fa-car:before {
   content: "\f1b9";
 }
+
 .fa-share-alt:before {
   content: "\f1e0";
 }
+
 .fa-trash:before {
   content: "\f1f8";
 }
+
+.fa-chart-line:before {
+  content: "\f201";
+}
+
 .fa-cart-plus:before {
   content: "\f217";
 }
+
 .fa-cart-arrow-down:before {
   content: "\f218";
 }
+
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+
 .fa-trash-alt1:before {
   content: "\f2ee";
 }
+
 .fa-stopwatch:before {
   content: "\f2f2";
 }
+
 .fa-sign-out-alt:before {
   content: "\f2f5";
 }
+
 .fa-sign-in-alt:before {
   content: "\f2f6";
 }
+
 .fa-map-marker-alt:before {
   content: "\f3c5";
 }
+
 .fa-reply:before {
   content: "\f3e5";
 }
+
 .fa-user-alt:before {
   content: "\f406";
 }
+
+.fa-shipping-fast:before {
+  content: "\f48b";
+}
+
+.fa-hand-holding-usd:before {
+  content: "\f4c0";
+}
+
+.fa-user-astronaut:before {
+  content: "\f4fb";
+}
+
+.fa-user-tie:before {
+  content: "\f508";
+}
+
 .fa-feather-alt:before {
   content: "\f56b";
 }
+
 .fa-car-alt:before {
   content: "\f5de";
 }
+
 .fa-phone-alt:before {
   content: "\f879";
 }
+
 .fa-phone-square-alt:before {
   content: "\f87b";
 }
+
 .fa-heart1:before {
   content: "\f005";
 }
+
 .fa-clock1:before {
   content: "\f018";
 }
+
 .fa-bookmark:before {
   content: "\f02e";
 }
+
 .fa-trash-alt:before {
   content: "\f2ed";
 }
+
 .fa-twitter-square:before {
   content: "\f081";
 }
+
 .fa-facebook-square:before {
   content: "\f082";
 }
+
 .fa-github-square:before {
   content: "\f092";
 }
+
 .fa-twitter:before {
   content: "\f099";
 }
+
 .fa-facebook:before {
   content: "\f09a";
 }
+
 .fa-github:before {
   content: "\f09b";
 }
+
 .fa-youtube:before {
   content: "\f167";
 }
+
 .fa-instagram:before {
   content: "\f16d";
 }
+
 .fa-apple:before {
   content: "\f179";
 }
+
 .fa-facebook-f:before {
   content: "\f39e";
 }
+
 .fa-line:before {
   content: "\f3c0";
 }
+
 .fa-sistrix:before {
   content: "\f3ee";
 }
+
 .fa-whmcs:before {
   content: "\f40d";
 }
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -393,47 +529,57 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
+
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src:  url('../icomoon.woff?gd66kb') format('woff');
-  src:  url('../icomoon.woff?gd66kb') format('woff');
+  src: url('../icomoon.woff?gd66kb') format('woff');
+  src: url('../icomoon.woff?gd66kb') format('woff');
 }
+
 .fab {
-  font-family: 'Font Awesome 5 Brands'; }
+  font-family: 'Font Awesome 5 Brands';
+}
+
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src:  url('../icomoon.woff?gd66kb') format('woff');
-  src:  url('../icomoon.woff?gd66kb') format('woff');
+  src: url('../icomoon.woff?gd66kb') format('woff');
+  src: url('../icomoon.woff?gd66kb') format('woff');
 }
 
 .far {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 400; }
+  font-weight: 400;
+}
+
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src:  url('../icomoon.woff?gd66kb') format('woff');
-  src:  url('../icomoon.woff?gd66kb') format('woff');
- }
+  src: url('../icomoon.woff?gd66kb') format('woff');
+  src: url('../icomoon.woff?gd66kb') format('woff');
+}
 
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
+  font-weight: 900;
+}
