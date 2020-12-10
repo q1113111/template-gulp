@@ -52,6 +52,7 @@ $cyan:    #17a2b8 !default;
 //我自訂的
 
 // stylelint-disable-next-line scss/dollar-variable-default
+$colors: () !default;
 $colors: map-merge(
   (
     "blue":       $blue,

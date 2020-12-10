@@ -11,12 +11,12 @@
         }
     }
     &-item + &-item {
-        padding-left: $spacer*1.5;
+        padding-left: $spacer * 1.5;
         position: relative;
     }
-    &-item + &-item::before{
-        content:'/';
-        position:absolute;
+    &-item + &-item::before {
+        content: '/';
+        position: absolute;
         left: 10px;
     }
 }
