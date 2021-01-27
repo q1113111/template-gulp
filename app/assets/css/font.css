@@ -1,6 +1,6 @@
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * License - https://fontawesome.com/license/free (fas: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
 .fas,
@@ -235,7 +235,11 @@
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
+readers do not read off random characters that represent fas */
+
+.fa-music:before {
+  content: "\f001";
+}
 
 .fa-search:before {
   content: "\f002";
@@ -245,12 +249,24 @@ readers do not read off random characters that represent icons */
   content: "\f004";
 }
 
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+.fa-cog:before {
+  content: "\f013";
+}
+
 .fa-home:before {
   content: "\f015";
 }
 
 .fa-clock:before {
   content: "\f017";
+}
+
+.fa-sync:before {
+  content: "\f021";
 }
 
 .fa-tag:before {
@@ -279,6 +295,10 @@ readers do not read off random characters that represent icons */
 
 .fa-share:before {
   content: "\f064";
+}
+
+.fa-calendar-alt:before {
+  content: "\f073";
 }
 
 .fa-shopping-cart:before {
@@ -381,6 +401,14 @@ readers do not read off random characters that represent icons */
   content: "\f201";
 }
 
+.fa-toggle-off:before {
+  content: "\f204";
+}
+
+.fa-toggle-on:before {
+  content: "\f205";
+}
+
 .fa-cart-plus:before {
   content: "\f217";
 }
@@ -421,12 +449,24 @@ readers do not read off random characters that represent icons */
   content: "\f406";
 }
 
+.fa-circle:before {
+  content: "\f111";
+}
+
+.fa-play:before {
+  content: "\f04b";
+}
+
 .fa-shipping-fast:before {
   content: "\f48b";
 }
 
 .fa-hand-holding-usd:before {
   content: "\f4c0";
+}
+
+.fa-plus-circle:before {
+  content: "\f055";
 }
 
 .fa-user-astronaut:before {
@@ -520,6 +560,11 @@ readers do not read off random characters that represent icons */
 .fa-whmcs:before {
   content: "\f40d";
 }
+
+.fa-donate:before {
+  content: "\f4b9";
+}
+
 
 .sr-only {
   border: 0;

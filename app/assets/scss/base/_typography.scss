@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
 body {
-    // line-height: $li;
     letter-spacing: 0;
     font-weight: normal;
     font-family: 'Noto Sans TC', sans-serif;
@@ -9,54 +7,47 @@ body {
 a {
     transition: 0.3s linear;
     text-decoration: none;
-    &:hover {；
+
+    &:hover {
         text-decoration: none;
     }
 }
+
 .f-img {
     max-width: none;
     width: 100%;
 }
+
 img {
     max-width: 100%;
     vertical-align: top;
 }
+
 ul,
 ol {
     margin-top: 0;
     list-style: none;
     padding-left: 0;
 }
+
 button {
     background: transparent;
     border: none;
+
     &:focus {
         outline: none;
     }
 }
+
 input {
     border: none;
     outline: none;
 }
+
 p {
     font-weight: lighter;
 }
-// size
-.t1 {
-    font-size: 2.5rem;
-}
-.t2 {
-    font-size: 2rem;
-}
-.t3 {
-    font-size: 1.75rem;
-}
-.t4 {
-    font-size: 1.5rem;
-}
-.t5 {
-    font-size: 1.25rem;
-}
+
 @media screen and (max-width: 575px) {
     html {
         font-size: 14px;
