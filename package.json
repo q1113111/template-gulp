@@ -49,14 +49,19 @@
     "jquery-nice-select": "^1.1.0",
     "jquery.mmenu": "^7.3.3",
     "json-server": "^0.16.2",
+    "lightbox2": "^2.11.3",
+    "list.js": "^2.3.1",
     "magnific-popup": "^1.1.0",
     "masonry-layout": "^4.2.2",
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.12.0",
     "owl.carousel": "^2.3.4",
+    "paginationjs": "^2.1.5",
     "swiper": "^4.5.0",
     "webfontloader": "^1.6.28"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp-connect-php": "^1.0.3"
+  }
 }
