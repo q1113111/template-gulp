@@ -1,0 +1,27 @@
+.breadcrumb {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    &-item {
+        a {
+            color: $gray-900;
+        }
+        &.active {
+            color: $gray-200;
+        }
+    }
+    &-item + &-item {
+        padding-left: $spacer * 1.5;
+        position: relative;
+    }
+    &-item + &-item::before {
+        content: '/';
+        position: absolute;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .breadcrumb {
+        display: none;
+    }
+}

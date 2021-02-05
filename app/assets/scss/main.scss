@@ -1,34 +1,39 @@
 //vendors
-@import '../../../node_modules/bootstrap/scss/functions';
-@import 'utils/variables';
-@import '../../../node_modules/bootstrap/scss/mixins';
-@import '../../../node_modules/bootstrap/scss/grid';
-@import '../../../node_modules/bootstrap/scss/reboot';
-@import '../../../node_modules/bootstrap/scss/transitions';
-@import '../../../node_modules/bootstrap/scss/nav';
-@import '../../../node_modules/bootstrap/scss/forms';
-@import '../../../node_modules/bootstrap/scss/pagination';
-@import '../../../node_modules/bootstrap/scss/modal';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "utils/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/pagination";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/utilities/spacing";
+@import "../../../node_modules/bootstrap/scss/utilities/flex";
+
 // 工具和變數
-@import 'utils/function';
-@import 'utils/mixins';
-@import 'utils/helpers';
-//CSS reset
-@import 'base/reset';
+@import "utils/function";
+@import "utils/mixins";
+@import "utils/helpers";
+
 //版型
-@import 'base/typography';
+@import "base/typography";
+
 // 元件
-@import 'components/button';
-@import 'components/carousel';
-@import 'components/list01';
-@import 'components/dropdown';
+@import "components/button";
+@import "components/carousel";
+@import "components/list01";
+@import "components/dropdown";
+
 // layout
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/siderbar';
-@import 'layout/footers';
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/siderbar";
+@import "layout/footers";
+
 //page
-@import 'pages/home';
+@import "pages/home";
+
 //主題
-@import 'themes/theme';
-@import 'themes/admin';
+@import "themes/theme";
+@import "themes/admin";

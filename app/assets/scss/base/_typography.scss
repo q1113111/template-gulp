@@ -1,33 +1,55 @@
 body {
-    font-size: 1rem;
     letter-spacing: 0;
     font-weight: normal;
-    line-height: $headings-line-height;
-    max-width: 1920px;
-    margin: 0 auto;
+    font-family: 'Noto Sans TC', sans-serif;
 }
+
 a {
     transition: 0.3s linear;
     text-decoration: none;
-    color: $title-color;
+
     &:hover {
-        color: $link-hover-color;
         text-decoration: none;
     }
 }
+
+.f-img {
+    max-width: none;
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     vertical-align: top;
 }
-ul {
+
+ul,
+ol {
     margin-top: 0;
     list-style: none;
     padding-left: 0;
 }
+
 button {
     background: transparent;
     border: none;
+
     &:focus {
         outline: none;
+    }
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+p {
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 575px) {
+    html {
+        font-size: 14px;
     }
 }
