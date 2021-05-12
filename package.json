@@ -58,7 +58,7 @@
     "node-sass": "^4.12.0",
     "owl.carousel": "^2.3.4",
     "paginationjs": "^2.1.5",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
